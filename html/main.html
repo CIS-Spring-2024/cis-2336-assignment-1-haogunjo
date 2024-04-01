@@ -12,8 +12,46 @@
             color: #333;
         }
 
-        #welcome-section {
+        header {
             text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            background-color: red;
+            border-radius: 50%;
+            padding: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: darkred;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        #welcome-section {
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
@@ -22,7 +60,13 @@
 
         #location-section {
             margin-top: 20px;
-            text-align: center;
+        }
+
+        /* Reduce image size */
+        #welcome-section img {
+            max-width: 100%; /* Make sure the image doesn't exceed its container's width */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Add some space below the image */
         }
     </style>
     <title>Meenah's Food House - Home</title>
@@ -36,20 +80,18 @@
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="order">Order</a></li>
-                <li><a href="FAQpage">FAQ Page</a</li>
+                <li><a href="FAQpage">FAQ Page</a></li>
                 <li><a href="index.html">Owner's Bio</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <body>
-            <div id="welcome-section">
-                <img src="/Users/haminahogunjobi/Downloads/CIS 2336 ASSIGNMENT 1/cis-2336-assignment-1-haogunjo/images/yangskitchen_home copy.jpg"
-                <h1>Welcome to Meenah's Food House!</h1>
-                <p>Where culinary excellence meets a symphony of flavors! At Meenah's, we believe in crafting unforgettable dining experiences that tantalize your taste buds and leave you craving for more. Our diverse menu features a fusion of delectable dishes meticulously curated to satisfy every palate. From mouthwatering appetizers to sumptuous main courses, each dish is a masterpiece that reflects our commitment to quality ingredients and culinary creativity. Join us on a gastronomic journey where passion meets plate, and indulge in the delightful harmony of flavors at Meenah's Food House.</p>
-            </div>
-        </body>
+        <div id="welcome-section">
+            <img src="/Users/haminahogunjobi/Downloads/CIS 2336 ASSIGNMENT 1/cis-2336-assignment-1-haogunjo/images/yangskitchen_home copy.jpg" alt="Meenah's Food House">
+            <h2>Welcome to Meenah's Food House!</h2>
+            <p>Where culinary excellence meets a symphony of flavors! At Meenah's, we believe in crafting unforgettable dining experiences that tantalize your taste buds and leave you craving for more. Our diverse menu features a fusion of delectable dishes meticulously curated to satisfy every palate. From mouthwatering appetizers to sumptuous main courses, each dish is a masterpiece that reflects our commitment to quality ingredients and culinary creativity. Join us on a gastronomic journey where passion meets plate, and indulge in the delightful harmony of flavors at Meenah's Food House.</p>
+        </div>
 
         <div id="location-section">
             <h2>Location</h2>
@@ -64,3 +106,4 @@
     </footer>
 </body>
 </html>
+
